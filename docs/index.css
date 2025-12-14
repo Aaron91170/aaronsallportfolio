@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.navbar {
+  height: 80px;
+  font-size: 1.1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#home {
+  height: 100vh;
+  background: url('arriere_paln_portefolio.jpeg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#home h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#home p {
+  font-size: 1.5rem;
+}
+
+/* === PROFIL === */
+#about h2 {
+  text-align: left;
+  font-weight: bold;
+}
+
+#about .lead {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+/* === COMPÉTENCES === */
+#competences h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#competences .col-md-6 h4 {
+  font-weight: bold;
+}
+
+/* === RÉALISATIONS === */
+#realisations {
+  background-color: #fff;
+}
+
+#realisations h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#realisations .card {
+  transition: transform 0.3s;
+}
+
+#realisations .card:hover {
+  transform: scale(1.02);
+}
+
+#contact {
+  background-image: url('fondcontact.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+#contact .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-card,
+.contact-info {
+  background-color: white;
+  color: #222;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
